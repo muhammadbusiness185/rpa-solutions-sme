@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RPA Solutions for SMEs</title>
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <style>
     :root {
       --primary: #4f46e5;
@@ -35,10 +32,10 @@
     }
 
     .logo {
-      font-size: 22px;
       font-weight: 700;
-      margin-bottom: 40px;
+      font-size: 22px;
       letter-spacing: 0.5px;
+      margin-bottom: 40px;
     }
 
     header h1 {
@@ -102,10 +99,7 @@
       opacity: 1;
     }
 
-    .card h3 {
-      margin-top: 0;
-      font-size: 22px;
-    }
+    .card h3 { margin-top: 0; font-size: 22px; }
 
     .price {
       font-size: 28px;
@@ -175,18 +169,9 @@
   <h2>What We Do</h2>
   <p class="subtitle">We automate repetitive, rule-based business processes so teams can focus on growth.</p>
   <div class="grid">
-    <div class="card">
-      <h3>Process Automation</h3>
-      <p>Data entry, invoicing, reporting, and system updates.</p>
-    </div>
-    <div class="card">
-      <h3>24/7 Digital Workforce</h3>
-      <p>Bots operate continuously with high accuracy.</p>
-    </div>
-    <div class="card">
-      <h3>Rapid ROI</h3>
-      <p>See measurable efficiency gains within weeks.</p>
-    </div>
+    <div class="card"><h3>Process Automation</h3><p>Data entry, invoicing, reporting, and system updates.</p></div>
+    <div class="card"><h3>24/7 Digital Workforce</h3><p>Bots operate continuously with high accuracy.</p></div>
+    <div class="card"><h3>Rapid ROI</h3><p>See measurable efficiency gains within weeks.</p></div>
   </div>
 </section>
 
@@ -194,27 +179,19 @@
   <h2>Industries We Serve</h2>
   <p class="subtitle">Pre-built automation solutions for high-impact industries.</p>
   <div class="grid">
-    <div class="card">
-      <h3>Finance</h3>
-      <p>Invoice processing, reconciliations, and financial reporting.</p>
-    </div>
-    <div class="card">
-      <h3>Healthcare</h3>
-      <p>Patient data handling and appointment scheduling.</p>
-    </div>
-    <div class="card">
-      <h3>Logistics</h3>
-      <p>Inventory management and shipment tracking.</p>
-    </div>
+    <div class="card"><h3>Finance</h3><p>Invoice processing, reconciliations, and reporting automation.</p></div>
+    <div class="card"><h3>Healthcare</h3><p>Patient data handling and appointment scheduling.</p></div>
+    <div class="card"><h3>Logistics</h3><p>Inventory management and shipment tracking.</p></div>
   </div>
 </section>
 
-<section class="highlight">
+<section>
   <h2>Pricing Packages</h2>
-  <p class="subtitle">Simple, transparent pricing with no hidden costs.</p>
+  <p class="subtitle">Clear, affordable automation packages designed for SMEs.</p>
+
   <div class="grid">
     <div class="card">
-      <h3>Basic</h3>
+      <h3>Basic Automation</h3>
       <div class="price">£500 / month</div>
       <ul>
         <li>Data entry automation</li>
@@ -224,7 +201,7 @@
     </div>
 
     <div class="card">
-      <h3>Intermediate</h3>
+      <h3>Intermediate Automation</h3>
       <div class="price">£1,000 / month</div>
       <ul>
         <li>OCR document processing</li>
@@ -234,7 +211,7 @@
     </div>
 
     <div class="card">
-      <h3>Advanced</h3>
+      <h3>Advanced Automation</h3>
       <div class="price">£2,000 / month</div>
       <ul>
         <li>AI-powered workflows</li>
@@ -242,12 +219,22 @@
         <li>End-to-end automation</li>
       </ul>
     </div>
+
+    <div class="card">
+      <h3>Custom Solutions</h3>
+      <div class="price">£10,000+</div>
+      <ul>
+        <li>Industry-specific bots</li>
+        <li>Custom integrations</li>
+        <li>Dedicated support</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <section id="contact">
   <h2>Book a Free Demo</h2>
-  <p class="subtitle">Click submit to email us directly.</p>
+  <p class="subtitle">Your enquiry is sent directly to our inbox.</p>
   <form action="mailto:muhammadbusiness185@gmail.com" method="POST" enctype="text/plain">
     <input type="text" name="Name" placeholder="Your Name" required />
     <input type="email" name="Email" placeholder="Your Email" required />
@@ -265,9 +252,7 @@
   const cards = document.querySelectorAll('.card');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
+      if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, { threshold: 0.1 });
 
