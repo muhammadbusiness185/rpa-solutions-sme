@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RPA Solutions for SMEs</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --primary: #4f46e5;
-      --secondary: #7c3aed;
       --dark: #111827;
       --light: #f9fafb;
       --card: #ffffff;
@@ -25,16 +26,15 @@
     }
 
     header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
       color: white;
       padding: 80px 20px 100px;
       text-align: center;
     }
 
     .logo {
-      font-weight: 700;
       font-size: 22px;
-      letter-spacing: 0.5px;
+      font-weight: 700;
       margin-bottom: 40px;
     }
 
@@ -63,6 +63,8 @@
       padding: 80px 20px;
       max-width: 1100px;
       margin: auto;
+      background: var(--light);
+      color: var(--dark);
     }
 
     h2 {
@@ -99,7 +101,10 @@
       opacity: 1;
     }
 
-    .card h3 { margin-top: 0; font-size: 22px; }
+    .card h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
 
     .price {
       font-size: 28px;
@@ -110,12 +115,6 @@
 
     ul { padding-left: 20px; }
     ul li { margin-bottom: 8px; }
-
-    .highlight {
-      background: var(--dark);
-      color: white;
-      border-radius: 24px;
-    }
 
     form {
       max-width: 600px;
@@ -156,6 +155,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -167,78 +167,62 @@
 
 <section>
   <h2>What We Do</h2>
-  <p class="subtitle">We automate repetitive, rule-based business processes so teams can focus on growth.</p>
+  <p class="subtitle">We automate repetitive, rule-based processes so your team can focus on growth.</p>
   <div class="grid">
-    <div class="card"><h3>Process Automation</h3><p>Data entry, invoicing, reporting, and system updates.</p></div>
-    <div class="card"><h3>24/7 Digital Workforce</h3><p>Bots operate continuously with high accuracy.</p></div>
-    <div class="card"><h3>Rapid ROI</h3><p>See measurable efficiency gains within weeks.</p></div>
+    <div class="card"><h3>Process Automation</h3><p>Data entry, invoicing, reporting.</p></div>
+    <div class="card"><h3>24/7 Digital Workforce</h3><p>Reliable bots that never stop.</p></div>
+    <div class="card"><h3>Rapid ROI</h3><p>Results in weeks, not months.</p></div>
   </div>
 </section>
 
 <section>
   <h2>Industries We Serve</h2>
-  <p class="subtitle">Pre-built automation solutions for high-impact industries.</p>
+  <p class="subtitle">Automation tailored to real-world SME needs.</p>
   <div class="grid">
-    <div class="card"><h3>Finance</h3><p>Invoice processing, reconciliations, and reporting automation.</p></div>
-    <div class="card"><h3>Healthcare</h3><p>Patient data handling and appointment scheduling.</p></div>
-    <div class="card"><h3>Logistics</h3><p>Inventory management and shipment tracking.</p></div>
+    <div class="card"><h3>Finance</h3><p>Invoicing, reconciliation, reporting.</p></div>
+    <div class="card"><h3>Healthcare</h3><p>Patient data and scheduling.</p></div>
+    <div class="card"><h3>Logistics</h3><p>Inventory and shipment tracking.</p></div>
   </div>
 </section>
 
-<section style="background:#f9fafb; color:#111827;">\n  <h2>Pricing Packages"</h2>
-  <p class="subtitle">Clear, affordable automation packages designed for SMEs.</p>
-
+<section>
+  <h2>Pricing Packages</h2>
+  <p class="subtitle">Clear, scalable automation pricing.</p>
   <div class="grid">
     <div class="card">
       <h3>Basic Automation</h3>
       <div class="price">£500 / month</div>
-      <ul>
-        <li>Data entry automation</li>
-        <li>Invoice processing</li>
-        <li>Email support</li>
-      </ul>
+      <ul><li>Data entry automation</li><li>Invoice processing</li><li>Email support</li></ul>
     </div>
-
     <div class="card">
       <h3>Intermediate Automation</h3>
       <div class="price">£1,000 / month</div>
-      <ul>
-        <li>OCR document processing</li>
-        <li>System integrations</li>
-        <li>Priority support</li>
-      </ul>
+      <ul><li>OCR document processing</li><li>System integrations</li><li>Priority support</li></ul>
     </div>
-
     <div class="card">
       <h3>Advanced Automation</h3>
       <div class="price">£2,000 / month</div>
-      <ul>
-        <li>AI-powered workflows</li>
-        <li>Analytics dashboards</li>
-        <li>End-to-end automation</li>
-      </ul>
+      <ul><li>AI-powered workflows</li><li>Analytics dashboards</li><li>End-to-end automation</li></ul>
     </div>
-
     <div class="card">
       <h3>Custom Solutions</h3>
       <div class="price">£10,000+</div>
-      <ul>
-        <li>Industry-specific bots</li>
-        <li>Custom integrations</li>
-        <li>Dedicated support</li>
-      </ul>
+      <ul><li>Industry-specific bots</li><li>Custom integrations</li><li>Dedicated support</li></ul>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <h2>Book a Free Demo</h2>
-  <p class="subtitle">Your enquiry is sent directly to our inbox.</p>
-  <form action="mailto:muhammadbusiness185@gmail.com" method="POST" enctype="text/plain">
-    <input type="text" name="Name" placeholder="Your Name" required />
-    <input type="email" name="Email" placeholder="Your Email" required />
-    <input type="text" name="Company" placeholder="Company Name" />
-    <textarea name="Message" rows="5" placeholder="Describe the process you want to automate"></textarea>
+  <p class="subtitle">We’ll review your process and suggest automation opportunities.</p>
+
+  <!-- NETLIFY FORM -->
+  <form name="demo" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="demo">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="company" placeholder="Company Name">
+    <textarea name="message" rows="5" placeholder="Describe the process you want to automate"></textarea>
     <button type="submit">Request Demo</button>
   </form>
 </section>
@@ -254,7 +238,6 @@
       if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, { threshold: 0.1 });
-
   cards.forEach(card => observer.observe(card));
 </script>
 
